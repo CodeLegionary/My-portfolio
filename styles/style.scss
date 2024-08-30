@@ -1,3 +1,6 @@
+@import '_variables';
+
+
 * {background-color: black;
 background-image: "";
 color: yellow;
@@ -5,16 +8,16 @@ justify-content: center;
 text-align: center;}
 
 body {
-    display: flex;
+    display: flexbox;
     font-size: 23px;
-    font-family:'Times New Roman', Times, serif;
+    font-family: $fonts1;
 }
 
 body p, ol li, ul li {line-height: 28px;}
 
 
 h1, h3, h5 {
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-family: $fonts2;
     line-height: 3 em;
 }
 
@@ -37,7 +40,7 @@ h4 {
     text-align: center;
     justify-content: center;
     margin-left: 7px;
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family: $fonts3;
 }
 
 nav {background-color: beige;
@@ -45,9 +48,8 @@ position: fixed; /*check this*/
 display: block;
 left: 0;
 top: 0;
-width: 120px; /*adjust font or use vw or % measures*/
+width: 120px;
 height: 100%;
-/*nextText does not work*/
 overflow-y:scroll;
 scroll-behavior:auto;
 overflow-x:unset;
@@ -118,9 +120,15 @@ margin: 0;}
 
 .ndlist {list-style-type:lower-greek}
 
-@media only screen and (max-width: 500px) { /* !!! CHANGE PCITURE SIZE AND FRAME !!! */
+form {display: flexbox; width: auto;
+flex-direction:column;
+width: 100vw;
+} /*form part is covered by bootstrap but I leave this here for a secondary style option*/
+textarea {width: 90%;}
+
+@media only screen and (max-width: 500px) {
     body {display:block;
-        position: absolute;;
+        position: absolute;
         margin-left: 0;
         font-size: 18px;
     }
@@ -134,7 +142,7 @@ margin: 0;}
     }
 
 
-    nav  {
+    nav  {font-size: 16px;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
@@ -145,7 +153,6 @@ margin: 0;}
 width: 100%;
 height: 50px;
 
-/*nextText does not work*/
 overflow-x: scroll;
 scroll-behavior: auto;
 overflow-y: hidden;}
@@ -165,8 +172,14 @@ nav ul li {display: inline-block;}
 }
 
 @media only screen and (max-width: 300px) {
-    body {font-size: 13px;}
+    body {font-size: 13px; margin-top: 0; padding-top:0;}
+    main {position: absolute; top: 0;}
     body ol  {padding-left: 18px;
         margin-left:0;
     border-left: 0;}
+    nav { position: -webkit-sticky; /* For Safari */
+        position: sticky;
+        top: 0;
+        width: 93vw;
+    }
 }

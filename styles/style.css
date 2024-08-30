@@ -1,0 +1,228 @@
+* {
+  background-color: black;
+  background-image: "";
+  color: yellow;
+  justify-content: center;
+  text-align: center;
+}
+
+body {
+  display: flexbox;
+  font-size: 23px;
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+body p, ol li, ul li {
+  line-height: 28px;
+}
+
+h1, h3, h5 {
+  font-family: "Times New Roman", Times, serif;
+  line-height: 3 em;
+}
+
+h1 {
+  font-size: 2.5 em;
+  margin-bottom: 30px;
+}
+
+h3 {
+  font-size: 2 em;
+}
+
+h4, h5 {
+  font-size: 1.8 em;
+}
+
+h4 {
+  border-radius: 30px;
+  width: 90px;
+  text-align: center;
+  justify-content: center;
+  margin-left: 7px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+nav {
+  background-color: beige;
+  position: fixed; /*check this*/
+  display: block;
+  left: 0;
+  top: 0;
+  width: 120px;
+  height: 100%;
+  overflow-y: scroll;
+  scroll-behavior: auto;
+  overflow-x: unset;
+}
+
+main {
+  display: block;
+  padding-left: 124px;
+  left: 120px;
+  top: 0;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+ul li {
+  padding-top: 5px;
+}
+
+li {
+  color: white;
+  padding-bottom: 25px;
+}
+
+p {
+  color: white;
+  padding-bottom: 20px;
+}
+
+nav li {
+  line-height: 30px;
+}
+
+nav ul {
+  padding-top: 20px;
+}
+
+i {
+  color: aliceblue;
+}
+
+@keyframes lampeggia {
+  0% {
+    color: aquamarine;
+  }
+  33% {
+    color: lightgreen;
+  }
+  66% {
+    color: lightseagreen;
+  }
+  100% {
+    color: aquamarine;
+  }
+}
+em {
+  font-weight: bold;
+  width: 100px;
+  height: 100px;
+  animation: lampeggia 2s infinite;
+}
+
+.profile_img {
+  border-radius: 175px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 60%;
+}
+
+.flag {
+  width: 2em;
+}
+
+.svg {
+  display: inline-block;
+  width: 1em;
+  padding-top: 20px;
+}
+
+ol {
+  left: 0;
+  margin-left: 0;
+}
+
+ol li {
+  justify-content: start;
+  text-align: start;
+  padding: 0;
+  padding-top: 10px;
+  margin: 0;
+}
+
+.ndlist {
+  list-style-type: lower-greek;
+}
+
+form {
+  display: flexbox;
+  width: auto;
+  flex-direction: column;
+  width: 100vw;
+} /*form part is covered by bootstrap but I leave this here for a secondary style option*/
+textarea {
+  width: 90%;
+}
+
+@media only screen and (max-width: 500px) {
+  body {
+    display: block;
+    position: absolute;
+    margin-left: 0;
+    font-size: 18px;
+  }
+  main {
+    display: block;
+    padding-left: 2px;
+    padding-right: 4px;
+    left: 4px;
+    top: 60px;
+    margin-top: 70px;
+  }
+  nav {
+    font-size: 16px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    left: 0;
+    margin: 0;
+    padding-bottom: 0;
+    align-items: flex-center;
+    width: 100%;
+    height: 50px;
+    overflow-x: scroll;
+    scroll-behavior: auto;
+    overflow-y: hidden;
+  }
+  nav ul {
+    display: flex;
+    margin-left: 3px;
+    text-align: start;
+    justify-items: flex-start;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    width: 500px;
+  }
+  nav ul li {
+    display: inline-block;
+  }
+}
+@media only screen and (max-width: 300px) {
+  body {
+    font-size: 13px;
+    margin-top: 0;
+    padding-top: 0;
+  }
+  main {
+    position: absolute;
+    top: 0;
+  }
+  body ol {
+    padding-left: 18px;
+    margin-left: 0;
+    border-left: 0;
+  }
+  nav { /* For Safari */
+    position: sticky;
+    top: 0;
+    width: 93vw;
+  }
+}/*# sourceMappingURL=style.css.map */
