@@ -32,7 +32,7 @@ p {
 }
 
 p:last-of-type {
-  padding-bottom: 1em;
+  padding-bottom: 2em;
 }
 
 p, a, div, li {
@@ -40,7 +40,7 @@ p, a, div, li {
 }
 
 p, ol li, ul li {
-  line-height: 2em;
+  line-height: 2.2em;
   padding-top: 10px;
 }
 
@@ -140,7 +140,7 @@ h1, h2, h3, .centre {
 
 h1, h2, h3 {
   padding-top: 0.9em;
-  line-height: 1.5em;
+  line-height: 1.6em;
 }
 
 .svg {
