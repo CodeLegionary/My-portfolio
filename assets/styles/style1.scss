@@ -2,9 +2,10 @@
 
 /*MOBILE FIRST APPROACH*/
 
-body {background-color: rgba(64, 224, 208, 0.767);
+body {
 font-family: $fonts1;
-font-size: medium;}
+font-size: medium;
+}
 
 main {
     height: auto;
@@ -14,17 +15,25 @@ main {
 nav {position: fixed;
 position: sticky;}
 
+.language-selector {
+    text-align: center; padding-top: 1.2em;
+}
+
 .navbar-nav {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
+.navbar-toggler {
+    margin-left: auto !important;
+    margin-right: 10px !important;
+}
+
 p {margin-left: 0.5rem;}
 
-p:last-of-type{padding-bottom: 2em;}
-
-p, a, div, li {font-size: 105%;}
+p:last-of-type{padding-bottom: 2em;
+margin-bottom: 2.2em;}
 
 p, ol li, ul li {
     line-height: 2.2em;
@@ -48,7 +57,7 @@ ol li {
     margin-left: -1em;
 }
 
-.colored {font-weight: 600 !important;
+.colored {font-weight: 300 !important;
     color: bisque !important;
 }
 
@@ -95,7 +104,10 @@ align-content: center;}
 
 h1 {color: #fba300; font-family: $roboto;
     font-size: 220%;
-    font-weight: 700;}
+    font-weight: 700;
+    padding: 0.4em 0;
+    line-height: 1.6em;
+}
 
 
 
@@ -112,7 +124,7 @@ letter-spacing: 0.1em;}
 h1,h2,h3,.centre {text-align: center;
 }
 
-h1,h2,h3 {padding-top: 0.9em;
+h2,h3 {padding-top: 0.9em;
 line-height: 1.6em;}
 
 .svg {
@@ -167,7 +179,7 @@ h1 {
 h2 {
         font-size: 160%;
     }
-p, li, div {
+body{
     font-size: 115%;
     }
 }
@@ -180,7 +192,8 @@ h2      {
         font-size: 220%;
         }
 
-    p, li, div {
+    body {
         font-size: x-large;
     }
+    ol {margin-left: 1px;}
 }

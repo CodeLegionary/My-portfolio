@@ -1,19 +1,28 @@
 <!DOCTYPE HTML>
 <html lang="en">
 <head>
-    <title>Prospettive &amp; INFO Contatto</title>
+    <title>Profilo Personale</title>
     
     <meta charset="UTF-8"
     name="viewport"
     content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
-    <link rel="icon" type="image/x-icon" href="images/GDlogo.png">
+    <link rel="icon" type="image/x-icon" href="assets/images/GDlogo.png">
 
     <meta name="keywords" content="HTML, CSS, bootstrap, web development, front-end, English, Italian">
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 
-    <link href="styles/style1.css" rel="stylesheet">
+    <link href="assets/styles/style1.css" rel="stylesheet">
+
+    <style>
+        body {
+        background: url("assets/images/sky.png") no-repeat center center fixed;
+        background-size: cover;
+        margin: 0;
+        min-height: 100vh;
+    }
+    </style>
 </head>
 
 
@@ -26,7 +35,7 @@
     <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav mx-auto">
             <li class="nav-item">
-                <span class="navbar-brand">&emsp;MENU <img src="images/diamond.svg" class="diamond" alt="diamante"></span>
+                <span class="navbar-brand">&emsp;MENU <img src="assets/images/diamond.svg" class="diamond" alt="diamante"></span>
             </li>
             <li class="nav-item">
                 <a class="nav-link" href="indexita.html">Intro</a>
@@ -38,18 +47,26 @@
                 <a class="nav-link" href="proverbi.html" rel="link">4/5 Proverbi</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#" rel="link">VISION &amp; Links</a>
+                <a class="nav-link" href="#" rel="link">Profilo</a>
             </li>
         </ul>
     </div>
 </nav>
 
+
+<header>
+    <nav class="language-selector" style="font-size: 1.5em; font-weight: 500;">
+        <span style="color: whitesmoke"><i>ITA</i> | <a rel="link" href="profile.html">ENG</a></span>
+    </nav>
+    <h1>&#9734;&nbsp;Profilo Personale&nbsp;&#9734;</h1>
+</header>
+
+
 <main>
-
-    <h2><i>ITA</i> | <a rel="link" href="perspectives.html">ENG</a></h2>
-<h1>&#9734;&nbsp;VISION&nbsp;&#9734;</h1>
-
-    <h2>Situazione Attuale &amp; Punti di Forza&nbsp;&#128170;</h2>
+    <section>
+<h2>&#10024;&nbsp;VISIONE&nbsp;&#10024;</h2>
+        <article>
+    <h3>Situazione Attuale &amp; Punti di Forza&nbsp;&#128170;</h3>
 <p>
     Al momento studio in Italia <em>Ingegneria Informatica</em>. Inizialmente non è stato così semplice;
     l'approccio universitario britannico è più pratico, e paradossalmente avevo più dimestichezza nello studio in lingua inglese.
@@ -61,11 +78,13 @@
     sia in inglese che in italiano, e questo mi dà un grande vantaggio e mi rende più dinamico! Ho un ottimo equilibrio
     tra le due lingue e lavoro sempre per mantenere questi motori quanto più scattanti! Per me si tratta tanto di passione quanto di determinazione!
 </p>
+        </article>
     
-    <h2>Progetti e Obiettivi Futuri <img class="svg" src="images/laptop.svg" alt="PC"></h2>
+        <article>
+    <h3>Progetti e Obiettivi Futuri <img class="svg" src="assets/images/laptop.svg" alt="PC"></h3>
 
 <div class="container d-flex justify-content-center">
-    <img src="images/mdxhoodie.jpg" class="img-fluid" alt="Guardando avanti!">
+    <img src="assets/images/mdxhoodie.jpg" class="img-fluid" alt="Guardando avanti!">
 </div>
 <br/>
 <p>
@@ -78,8 +97,10 @@
     nuove competenze professionali! Apprendere cose nuove legate al web o al pc può essere molto utile anche nella vita quotidiana, ad esempio  mi è già capitato
     di aiutare amici con il loro sito <em>Wordpress</em>, ecc. Comunque, è qualcosa di buono che ti acuisce il cervello!
 </p>
+        </article>
 
-    <h2>Missione di Sviluppo Web&nbsp;&#128640;</h2>
+        <article>
+    <h3>Missione di Sviluppo Web&nbsp;&#128640;</h3>
 <p>
     Come ho accennato nel mio CV, mi piacciono tutti i tipi di linguaggi di programmazione, da quelli OS/processore allo sviluppo web! Il 1°
     che ho imparato è il <em>linguaggio C</em>, è stato divertente e mi ha dato una buona base per imparare anche i linguaggi OOP come <em>JAVA</em>.
@@ -94,7 +115,7 @@
 </p>
 
 <div class="container d-flex justify-content-center">
-    <img src="images/lilcowboy.jpg" class="img-fluid" alt="un piccolo me a cavallo">
+    <img src="assets/images/lilcowboy.jpg" class="img-fluid" alt="un piccolo me a cavallo">
 </div>
 
 <div class="centre">
@@ -107,9 +128,11 @@
     Spesso quando ho vissuto all'estero non è stato come andare ad un pic-nic o fare viaggio di divertimento e basta. E siti benfatti -
     ne so qualcosa - possono essere amici vitali... oltre ad essere uno strumento di business fondamentale, senza dubbio!
 </p>
+        </article>
+    </section>
 
-
-    <h1 id="contact">&#9734;&nbsp;Contatti&nbsp;&#9734;</h1>
+    <section>
+        <h2 id="contact">&#10024;&nbsp;Contatti&nbsp;&#10024;</h2>
 <div class="d-flex justify-content-center">
     <ul class="no-dots centered-list">
         <li><a target="_blank" rel link href="https://github.com/CodeLegionary">GitHub</a></li>
@@ -121,26 +144,29 @@
 </div>
 
 <p>Prima di contattarmi puoi dare un'occhiata <a rel="link" href="contattami.html" target="_blank">al seguente form</a>.</p>
+    </section>
 </main>
 
 <footer class="bg-dark text-center text-white py-3">
     <div class="container">
         <div class="row">
             <div class="col-md-3">
-                <span class="colored">Casa & Servizi:</span> Napoli, ITALIA. Front-End e Full-Stack
+                <span class="colored">SERVIZI:</span> Sviluppo Front-End e Full-Stack.
             </div>
             <div class="col-md-3">
-                <span class="colored">Info Contatto:</span> guarda contatti (&#8593;)</a> o usa il seguente <span class="green">Whatsapp</span>
+                <span class="colored">LINK RAPIDO:</span> usa i contatti sopracitati
+                o raggiungimi con <span class="green">WhatsApp</span> al: <span class="green">+44 (0) 756 8 209 706</span>.
             </div>
             <div class="col-md-3">
-                <span class="colored">Chat Rapida:</span> (solo <span class="green">Whatsapp</span>) +44 (0) 756 8 209 706
+                <span class="colored">DISCLAIMER:</span> per rimozione di foto usa i contatti indicati in precedenza.
             </div>
             <div class="col-md-3">
-                <span class="colored">Disclaimer:</span> per rimozione di foto usa i contatti appena indicati
+                <span class="colored">CASA:</span> Napoli, Campania - ITALIA.
             </div>
         </div>
     </div>
 </footer>
+
 
 
 

@@ -7,14 +7,23 @@
     <meta charset="UTF-8"
     name="viewport"
     content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
-    <link rel="icon" type="image/x-icon" href="images/GDlogo.png">
+    <link rel="icon" type="image/x-icon" href="assets/images/GDlogo.png">
 
     <meta name="keywords" content="HTML, CSS, bootstrap, web development, front-end, English, Italian">
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 
-    <link href="styles/style1.css" rel="stylesheet">
+    <link href="assets/styles/style1.css" rel="stylesheet">
+
+    <style>
+        body {
+        background: url("assets/images/sky.png") no-repeat center center fixed;
+        background-size: cover;
+        margin: 0;
+        min-height: 100vh;
+    }
+    </style>
 </head>
 
 
@@ -27,7 +36,7 @@
     <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav mx-auto">
             <li class="nav-item">
-                <span class="navbar-brand">&emsp;MENU <img src="images/diamond.svg" class="diamond" alt="diamond"></span>
+                <span class="navbar-brand">&emsp;MENU <img src="assets/images/diamond.svg" class="diamond" alt="diamond"></span>
             </li>
             <li class="nav-item">
                 <a class="nav-link" href="index.html">Intro</a>
@@ -39,16 +48,23 @@
                 <a class="nav-link" href="saying.html" rel="link">4/5 Sayings</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="perspectives.html" rel="link">VISION &amp; Links</a>
+                <a class="nav-link" href="profile.html" rel="link">My Profile</a>
             </li>
         </ul>
     </div>
 </nav>
         
-<main>
-    
-        <h2><a rel="link" href="cvita.html">ITA</a> | <i>ENG</i></h2>
+
+<header>
+    <nav class="language-selector" style="font-size: 1.5em; font-weight: 500;">
+        <span style="color: whitesmoke"><a rel="link" href="cvita.html">ITA</a> | <i>ENG</i></span>
+    </nav>
     <h1>&#9734;&nbsp;C&nbsp;V&nbsp;&#9734;</h1>
+</header>
+    
+
+<main>
+    <article>
         <h2>&#10024;TITLES&#10024;</h2>
 <ol>
     <li>
@@ -65,16 +81,16 @@
 <br/>
 <div class="container">
     <picture>
-        <source srcset="images/mdx_teamwork2a.jpg" media="(min-width: 500px)">
-        <img src="images/mdx_teamwork2b.jpg" class="img-fluid" style="margin-left: -15px;" alt="teamwork at Middlesex">
+        <source srcset="assets/images/mdx_teamwork2a.jpg" media="(min-width: 500px)">
+        <img src="assets/images/mdx_teamwork2b.jpg" class="img-fluid" style="margin-left: -15px;" alt="teamwork at Middlesex">
     </picture>
 </div>
     <br/>
 
 <div class="container">
     <picture>
-        <source srcset="images/mdx_teamworka.jpg" media="(min-width: 500px)">
-        <img src="images/mdx_teamworkb.jpg" class="img-fluid" style="margin-left: -15px;" alt="university focus group">
+        <source srcset="assets/images/mdx_teamworka.jpg" media="(min-width: 500px)">
+        <img src="assets/images/mdx_teamworkb.jpg" class="img-fluid" style="margin-left: -15px;" alt="university focus group">
     </picture>
 </div>
 <div>&nbsp;</div>
@@ -96,7 +112,9 @@
     <div class="loading">Loading current progress... go to next section please</div>
     <hr/>
 </div>
+    </article>
 
+    <article>
         <h2>&#10024;JOBS&#10024;</h2>
 
             <h3>LIFEGUARD</h3>
@@ -121,13 +139,13 @@
 </p>
 
 <div class="container1">
-    <img src="images/guard0.jpg" class="foto3" alt="security badge">
+    <img src="assets/images/guard0.jpg" class="foto3" alt="security badge">
 <div>&nbsp;</div>
     <picture>
-    <img src="images/london2a.jpg" class="img-fluid" alt="Me and a uni colleague!">
+    <img src="assets/images/london2a.jpg" class="img-fluid" alt="Me and a uni colleague!">
     </picture  class="foto3">
 <div>&nbsp;</div>
-    <img src="images/guard3.jpg" class="foto3" alt="Me on-duty!">
+    <img src="assets/images/guard3.jpg" class="foto3" alt="Me on-duty!">
 </div>
 
 
@@ -135,23 +153,25 @@
     <div class="loading">Checking for further updates...</div>
     <hr/>
 </div>
+    </article>
 
+    <article>
         <h2 id="skills">&#10024;SKILLSETS&#10024;</h2>
             <h3>LANGUAGE SKILLS</h3>
 <ul>
     <li>
-        <img class="flag" src="images/England.svg" alt="England"> <strong>ENGLISH:</strong> Before enrolling in university I already accomplished an <em>IELTS academic score of 7.5</em>,
+        <img class="flag" src="assets/images/England.svg" alt="England"> <strong>ENGLISH:</strong> Before enrolling in university I already accomplished an <em>IELTS academic score of 7.5</em>,
         which corresponds to a C1, and includes academic writing. From then on, I could just improve my language
         skills, and I had to test them in busy/stressful circumstances as well. Well done to me !!
         <div>&nbsp;</div>
-        <img src="images/london1a.jpg" class="img-fluid" style="margin-left: -15px" alt="Me in London!">
+        <img src="assets/images/london1a.jpg" class="img-fluid" style="margin-left: -15px" alt="Me in London!">
         <div>&nbsp;</div>
         Though now I prefer to practice English through reading, listening and writing, since I do not currently live in the UK.
         When I have the occasion I am happy to have a conversation in spoken English. Certain things will never change!
     </li>
     <br/>
     <li>
-        <img class="flag" src="images/Spain.svg" alt="Spain"> <strong>SPANISH:</strong> my Spanish is proficient and ready-to-use, yet I presently prefer to speak and think in English than in Spanish.
+        <img class="flag" src="assets/images/Spain.svg" alt="Spain"> <strong>SPANISH:</strong> my Spanish is proficient and ready-to-use, yet I presently prefer to speak and think in English than in Spanish.
     </li>
 </ul>
 
@@ -175,6 +195,7 @@
     Furthermore, I do have the great advantage of the English language, useful in official documentations, programming and <em>IA</em> assistance.
     I do not heavily rely on IA, but I understand the importance of tools such as Microsoft Copilot and ChatGPT.
 </p>
+    </article>
 </main>
 
 
@@ -182,19 +203,19 @@
     <div class="container">
         <div class="row">
             <div class="col-md-3">
-                <span class="colored">Home & Services:</span> Naples, ITALY. Front-End e Full-Stack
+                <span class="colored">SERVICES:</span> Front-End e Full-Stack Development.
             </div>
             <div class="col-md-3">
-                <span class="colored">Quick Links:</span> go to <a rel="link" href="perspectives.html#contact">Contact INFO</a> or check following <span class="green">Whatsapp</span>
+                <span class="colored">QUICK LINKS:</span> go to <a rel="link" href="profile.html#contact">Profile's Contacts</a>
+                or reach my <span class="green">WhatsApp</span> at: <span class="green">+44 (0) 756 8 209 706</span>.
             </div>
             <div class="col-md-3">
-                <span class="colored">Get in Touch:</span> (only <span class="green">Whatsapp</span>) +44 (0) 756 8 209 706
+                <span class="colored">DISCLAIMER:</span> to get image removal use previous contact indications.
             </div>
             <div class="col-md-3">
-                <span class="colored">Disclaimer:</span> to get image removal use previous contact indications
+                <span class="colored">HOME:</span> Naples, Campania - ITALY.
             </div>
         </div>
-    </div>
 </footer>
 
 

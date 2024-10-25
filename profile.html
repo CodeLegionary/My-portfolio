@@ -1,19 +1,28 @@
 <!DOCTYPE HTML>
 <html lang="en">
 <head>
-    <title>Perspectives &amp; Contact INFO</title>
+    <title>Personal Profile</title>
 
     <meta charset="UTF-8"
     name="viewport"
     content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
-    <link rel="icon" type="image/x-icon" href="images/GDlogo.png">
+    <link rel="icon" type="image/x-icon" href="assets/images/GDlogo.png">
 
     <meta name="keywords" content="HTML, CSS, bootstrap, web development, front-end, English, Italian">
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 
-    <link href="styles/style1.css" rel="stylesheet">
+    <link href="assets/styles/style1.css" rel="stylesheet">
+
+    <style>
+        body {
+        background: url("assets/images/sky.png") no-repeat center center fixed;
+        background-size: cover;
+        margin: 0;
+        min-height: 100vh;
+    }
+    </style>
 </head>
 
 
@@ -26,7 +35,7 @@
     <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav mx-auto">
             <li class="nav-item">
-                <span class="navbar-brand">&emsp;MENU <img src="images/diamond.svg" class="diamond" alt="diamond"></span>
+                <span class="navbar-brand">&emsp;MENU <img src="assets/images/diamond.svg" class="diamond" alt="diamond"></span>
             </li>
             <li class="nav-item">
                 <a class="nav-link" href="index.html">Intro</a>
@@ -38,18 +47,26 @@
                 <a class="nav-link" href="saying.html" rel="link">4/5 Sayings</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#" rel="link">VISION &amp; Links</a>
+                <a class="nav-link" href="#" rel="link">My Profile</a>
             </li>
         </ul>
     </div>
 </nav>
 
+
+<header>
+    <nav class="language-selector" style="font-size: 1.5em; font-weight: 500;">
+        <span style="color: whitesmoke"><a rel="link" href="profilo.html">ITA</a> | <i>ENG</i></span>
+    </nav>
+    <h1>&#9734;&nbsp;Personal Profile&nbsp;&#9734;</h1>
+</header>
+
+
 <main>
-
-    <h2><a rel="link" href="perspectivesita.html">ITA</a> | <i>ENG</i></h2>
-<h1>&#9734;&nbsp;VISION&nbsp;&#9734;</h1>
-
-    <h2>Current Situation &amp; Key Strengths&nbsp;&#128170;</h2>
+    <section>
+<h2>&#10024;&nbsp;VISION&nbsp;&#10024;</h2>
+        <article>
+    <h3>Current Situation &amp; Key Strengths&nbsp;&#128170;</h3>
 <p>
     At the moment I am studying in Italy <em>Computer Engineering</em>. Initially wasn't that straight-forward; the UK university
     approach is more practical, and paradoxically I was more used to the english language for studying.
@@ -62,10 +79,12 @@
     between the two languages and always work to keep those engines as sharp as possible! For me the key is both passion and
     dedication!
 </p>
-    
-    <h2>Future Projects &amp; Objectives <img class="svg" src="images/laptop.svg" alt="laptop"></h2>
+        </article>
+
+        <article>
+    <h3>Future Projects &amp; Objectives <img class="svg" src="assets/images/laptop.svg" alt="laptop"></h3>
 <div class="container d-flex justify-content-center">
-    <img src="images/mdxhoodie.jpg" class="img-fluid" alt="Me from the past looking ahead">
+    <img src="assets/images/mdxhoodie.jpg" class="img-fluid" alt="Me from the past looking ahead">
 </div>
 <br/>
 <p>
@@ -78,8 +97,10 @@
     new professional skills! Mastering pc or web related knowledge can also be critical in everyday life, for example it happened
     to me to help friends with their <em>Wordpress</em> site, etc. Anyways, is something good that sharpens the brain!
 </p>
+        </article>
 
-    <h2>Web Development Mission&nbsp;&#128640;</h2>
+        <article>
+    <h3>Web Development Mission&nbsp;&#128640;</h3>
 <p>
     As I mentioned in my CV, I like all types of programming languages, from OS/processor ones to web development! The first
     language I learned is <em>C language</em>, it was fun, and gave me good basis to learn also OOP languages like <em>JAVA</em>. Of the latter I
@@ -94,7 +115,7 @@
 </p>
 
 <div class="container d-flex justify-content-center">
-    <img src="images/lilcowboy.jpg" class="img-fluid" alt="lil-cowboy">
+    <img src="assets/images/lilcowboy.jpg" class="img-fluid" alt="lil-cowboy">
 </div>
 
 <div class="centre">
@@ -107,10 +128,12 @@
     I lived abroad it was not a piece of cake or simply travelling for fun. And good websites - I know - can be great friends too.. apart
     from being key business tools, for sure!
 </p>
+        </article>
+    </section>
 
-
-    <h1 id="contact">&#9734;&nbsp;Contact Info&nbsp;&#9734;</h1>
-<div class="d-flex justify-content-center">
+    <section>
+<h2 id="contact">&#10024;&nbsp;Contact Info&nbsp;&#10024;</h2>
+        <div class="d-flex justify-content-center">
     <ul class="no-dots centered-list">
         <li><a target="_blank" rel="link" href="https://github.com/CodeLegionary">GitHub</a></li>
         <li><a target="_blank" rel="link" href="https://www.instagram.com/itsgdf_est.1995">Instagram</a></li>
@@ -118,9 +141,10 @@
         <!--To be updatedli>linkedin</li-->
         <li><a href="tel:+393517962995">Call Me</a></li>
     </ul>
-</div>
+        </div>
 
-    <p>Before getting in touch you can check a relevant <a rel="link" href="contactme.html" target="_blank">Contact Sheet Format</a>.</p>
+    <p>Before getting in touch you can check relevant <a rel="link" href="contactme.html" target="_blank">Contact Sheet Format</a>.</p>
+    </section>
 </main>
 
 
@@ -128,19 +152,19 @@
     <div class="container">
         <div class="row">
             <div class="col-md-3">
-                <span class="colored">Home & Services:</span> Naples, ITALY. Front-End e Full-Stack
+                <span class="colored">SERVICES:</span> Front-End e Full-Stack Development.
             </div>
             <div class="col-md-3">
-                <span class="colored">Quick Links:</span> go through Contact INFO above, or check following <span class="green">Whatsapp</span>
+                <span class="colored">QUICK LINKS:</span> check contacts above
+                or reach my <span class="green">WhatsApp</span> at: <span class="green">+44 (0) 756 8 209 706.
             </div>
             <div class="col-md-3">
-                <span class="colored">Get in Touch:</span> (only <span class="green">Whatsapp</span>) +44 (0) 756 8 209 706
+                <span class="colored">DISCLAIMER:</span> to get image removal use previous contact indications.
             </div>
             <div class="col-md-3">
-                <span class="colored">Disclaimer:</span> to get image removal use previous contact indications
+                <span class="colored">HOME:</span> Naples, Campania - ITALY.
             </div>
         </div>
-    </div>
 </footer>
 
 

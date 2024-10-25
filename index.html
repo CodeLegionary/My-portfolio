@@ -8,14 +8,27 @@
     <meta charset="UTF-8"
     name="viewport"
     content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
-    <link rel="icon" type="image/x-icon" href="images/GDlogo.png">
+    <meta property="og:title" content="Dominic's Portfolio" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://codelegionary.github.io/My-portfolio/" />
+    <meta property="og:image" content="https://raw.githubusercontent.com/CodeLegionary/My-portfolio/refs/heads/main/images/diamond.svg" />
+    <link rel="icon" type="image/x-icon" href="assets/images/GDlogo.png">
 
     <meta name="keywords" content="HTML, CSS, bootstrap, web development, front-end, English, Italian">
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 
-    <link href="styles/style1.css" rel="stylesheet">
+    <link href="assets/styles/style1.css" rel="stylesheet">
+
+    <style>
+        body {
+        background: url("assets/images/sky.png") no-repeat center center fixed;
+        background-size: cover;
+        margin: 0;
+        min-height: 100vh;
+    }
+    </style>
 </head>
 
 
@@ -28,7 +41,7 @@
     <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav mx-auto">
             <li class="nav-item">
-                <span class="navbar-brand">&emsp;MENU <img src="images/diamond.svg" class="diamond" alt="diamond"></span>
+                <span class="navbar-brand">&emsp;MENU <img src="assets/images/diamond.svg" class="diamond" alt="diamond"></span>
             </li>
             <li class="nav-item">
                 <a class="nav-link" href="#">Intro</a>
@@ -40,22 +53,30 @@
                 <a class="nav-link" href="saying.html" rel="link">4/5 Sayings</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="perspectives.html" rel="link">VISION &amp; Links</a>
+                <a class="nav-link" href="profile.html" rel="link">My Profile</a>
             </li>
         </ul>
     </div>
 </nav>
 
-<main>
-    <h2><a rel="link" href="indexita.html">ITA</a> | <i>ENG</i></h2>
+<header>
+    <nav class="language-selector" style="font-size: 1.5em; font-weight: 500;">
+        <span style="color: whitesmoke"><a rel="link" href="indexita.html">ITA</a> | <i>ENG</i></span>
+    </nav>
     <h1>&#9734;&nbsp;Dominic's Portfolio&nbsp;&#9734;</h1>
+</header>
+    
+    
+
+<main>
+    <section>
 <p class="centre">Hello world, I am Gian Domenico Farina and this is my personal portfolio! Glad you are here!!</p>
 
 
 <picture>
-    <source srcset="images/IMAGE1stcut.jpg" media="(min-width: 600px)">
-    <source srcset="images/IMAGE2.jpg" media="(min-width: 400px)">
-    <img class="img-fluid" src="images/IMAGE3.jpg" alt="Io a Napoli!">
+    <source srcset="assets/images/IMAGE1stcut.jpg" media="(min-width: 600px)">
+    <source srcset="assets/images/IMAGE2.jpg" media="(min-width: 400px)">
+    <img class="img-fluid" src="assets/images/IMAGE3.jpg" alt="Io a Napoli!">
 </picture>
 
 <div class="centre">
@@ -75,13 +96,16 @@ sharing!
 Reading time can vary from 7 to 11 minutes!</p>
     
 <p>If the site still results of relevant size, do not worry: it reflects my personality!<br/> And if you wanna go straight to the main content
-most relevant parts are the <a href="cv.html" rel="link">CV page</a> and <a href="perspectives.html" rel="link">Vision section</a>.
+most relevant parts are the <a href="cv.html" rel="link">Curriculum Vitae</a> and <a href="profile.html" rel="link">Personal Profile</a> pages.
 </p>
+    </section>
     
-    <h2>Who am I? Self-made to the core</h2>
+    
+    <article>
+        <h2>Who am I? Self-made to the core</h2>
 <p class="centre"><strong>E-V-E-R-Y-O-N-E</strong> is !!!<p>
 <div class="container">
-    <img src="images/london6.jpg" class="img-fluid" alt="Me and a colleague in London!">
+    <img src="assets/images/london6.jpg" class="img-fluid" alt="Me and a colleague in London!">
 </div>
 <br/>
 
@@ -89,27 +113,32 @@ most relevant parts are the <a href="cv.html" rel="link">CV page</a> and <a href
 Under this perspective even too much entitlement/comfort can become counterproductive!!
 Overall, I am a quite self-aware individual; I am glad of the opportunities life has given me - including the most challenging!
 </p>
+    </article>
 
-    <h2>What I care for?</h2>
+    <article>
+        <h2>What I care for?</h2>
 <p>I have many interests. I like any type of language, without forgetting ancient greek and <em>programming</em> languages of course! I like philosophies like stoicism,
 and enjoy reading kind of everything in my free time. For me <em>content writing</em> can be kind of an hobby too!<br/>
 I am a sports person, and once in a while I can also do some dancing! But I am more like a home/family-oriented individual overall.</p>
+    </article>
 </main>
+
 
 <footer class="bg-dark text-center text-white py-3">
     <div class="container">
         <div class="row">
             <div class="col-md-3">
-                <span class="colored">Home & Services:</span> Naples, ITALY. Front-End e Full-Stack
+                <span class="colored">SERVICES:</span> Front-End e Full-Stack Development.
             </div>
             <div class="col-md-3">
-                <span class="colored">Quick Links:</span> go to <a rel="link" href="perspectives.html#contact">Contact INFO</a> or check following <span class="green">Whatsapp</span>
+                <span class="colored">QUICK LINKS:</span> go to <a rel="link" href="profile.html#contact">Profile's Contacts</a>
+                or reach my <span class="green">WhatsApp</span> at: <span class="green">+44 (0) 756 8 209 706</span>.
             </div>
             <div class="col-md-3">
-                <span class="colored">Get in Touch:</span> (only <span class="green">Whatsapp</span>) +44 (0) 756 8 209 706
+                <span class="colored">DISCLAIMER:</span> to get image removal use previous contact indications.
             </div>
             <div class="col-md-3">
-                <span class="colored">Disclaimer:</span> to get image removal use previous contact indications
+                <span class="colored">HOME:</span> Naples, Campania - ITALY.
             </div>
         </div>
 </footer>

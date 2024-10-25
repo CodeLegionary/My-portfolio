@@ -6,14 +6,23 @@
     <meta charset="UTF-8"
     name="viewport"
     content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
-    <link rel="icon" type="image/x-icon" href="images/GDlogo.png">
+    <link rel="icon" type="image/x-icon" href="assets/images/GDlogo.png">
 
     <meta name="keywords" content="HTML, CSS, bootstrap, web development, front-end, English, Italian">
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 
-    <link href="styles/style1.css" rel="stylesheet">
+    <link href="assets/styles/style1.css" rel="stylesheet">
+
+    <style>
+        body {
+        background: url("assets/images/sky.png") no-repeat center center fixed;
+        background-size: cover;
+        margin: 0;
+        min-height: 100vh;
+    }
+    </style>
 </head>
 
 
@@ -26,7 +35,7 @@
     <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav mx-auto">
             <li class="nav-item">
-                <span class="navbar-brand">&emsp;MENU <img src="images/diamond.svg" class="diamond" alt="diamond"></span>
+                <span class="navbar-brand">&emsp;MENU <img src="assets/images/diamond.svg" class="diamond" alt="diamond"></span>
             </li>
             <li class="nav-item">
                 <a class="nav-link" href="index.html">Intro</a>
@@ -38,16 +47,23 @@
                 <a class="nav-link" href="#" rel="link">4/5 Sayings</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="perspectives.html" rel="link">VISION &amp; Links</a>
+                <a class="nav-link" href="profile.html" rel="link">My Profile</a>
             </li>
         </ul>
     </div>
 </nav>
 
-<main>
 
-    <h2><a rel="link" href="proverbi.html">ITA</a> | <i>ENG</i></h2>
-        <h1>&#9734;&nbsp;IV or V Ways of Saying to Tell You about Me!&nbsp;&#9734;</h1>
+<header>
+    <nav class="language-selector" style="font-size: 1.5em; font-weight: 500;">
+        <span style="color: whitesmoke"><a rel="link" href="proverbi.html">ITA</a> | <i>ENG</i></span>
+    </nav>
+    <h1>&#9734;&nbsp;IV or V Ways of Saying to Tell You about Me!&nbsp;&#9734;</h1>
+</header>
+    
+
+<main>
+    <article>
     <h2>Slow &amp; Steady Wins The Race&nbsp;!</h2>
 <p>
     Ok life can be a <em>rush</em>, agreed! I will not lie to you and tell you I have achieved what I have by taking
@@ -56,11 +72,13 @@
     leave the game half-way when things get more interesting. In the end we all want to cut the finish line, it is a matter
     of <em>consistency</em> and keeping your own pace in the long run.
 </p>
+    </article>
 
+    <article>
     <h2>If You Want Something Done, Do It Yourself</h2>
 <div class="container d-flex justify-content-center">
     <picture class="centre">
-        <img src="images/guard1a.jpg" class="img-fluid" style="width:50%;" alt="Covering extra-shifts!">
+        <img src="assets/images/guard1a.jpg" class="img-fluid" style="width:50%;" alt="Covering extra-shifts!">
     </picture>
 </div>
 <br/>
@@ -71,25 +89,31 @@ least the ability/knowledge to do things on your own, so you know what the tasks
 myself dealing directly with the issues, it was useless to ask others for help/advice at some points. I knew my way, and made
 things work around it, fortunately!
 </p>
+    </article>
 
-    <h2>Every Cloud Has A Silver Lining <img class="svg" src="images/cloud.svg" alt="cloud"></h2>
+    <article>
+    <h2>Every Cloud Has A Silver Lining <img class="svg" src="assets/images/cloud.svg" alt="cloud"></h2>
 <p>
     Not all bad things come to hurt, exactly! even the worst things/events have a brighter side, it depends on the way we
     look at things, not the other way around. The world - or to be more precise its perception - can be a reflection
     of our own thoughts and emotions. And of course I am not saying that the world cannot be a mean and nasty place: life
     is too often not fair at all.. ok. But we are the creators of our own <em>destiny</em>, we can embrace life and shape our future!!
 </p>
+    </article>
 
+    <article>
     <h2><strong>G-O-D</strong> Helps Those Who Help Themselves</h2>
 <p>
     Ultimately, it is relevant to know on which tasks and life objectives to focus on. If we do not give ourselves the right <em>direction</em>
     nobody will: we can have <em>inspiration</em> from outside/above, but it starts with us to take the lead!
 </p>
+    </article>
 
-    <h2> Life Is Beautiful.. <img class="svg" src="images/sun.svg" alt="sun image"></h2>
+    <article>
+    <h2> Life Is Beautiful.. <img class="svg" src="assets/images/sun.svg" alt="sun image"></h2>
 <div class="container1">
-    <img src="images/lifeguard.jpg" class="foto2" alt="Me as a lifeguard">
-    <img src="images/naples.jpg" class="foto2" alt="My city: Naples">
+    <img src="assets/images/lifeguard.jpg" class="foto2" alt="Me as a lifeguard">
+    <img src="assets/images/naples.jpg" class="foto2" alt="My city: Naples">
 </div>
 <br/>
 <p>
@@ -97,25 +121,26 @@ Yes, I know.. this is not a proper way of saying. It sounds more like the title 
 a way of living? Many times we get caught in our own dilemmas and rules and we forget to <strong>LIVE L-I-F-E to the fullest</strong>: I want to end this page with
 this conclusion ... I know speaking is easier.. but once we own the concept we just got to make it work! Life is good !! Life is beautiful ...
 </p>
+    </article>
 </main>
 
 <footer class="bg-dark text-center text-white py-3">
     <div class="container">
         <div class="row">
             <div class="col-md-3">
-                <span class="colored">Home & Services:</span> Naples, ITALY. Front-End e Full-Stack
+                <span class="colored">SERVICES:</span> Front-End e Full-Stack Development.
             </div>
             <div class="col-md-3">
-                <span class="colored">Quick Links:</span> go to <a rel="link" href="perspectives.html#contact">Contact INFO</a> or check following <span class="green">Whatsapp</span>
+                <span class="colored">QUICK LINKS:</span> go to <a rel="link" href="profile.html#contact">Profile's Contacts</a>
+                or reach my <span class="green">WhatsApp</span> at: <span class="green">+44 (0) 756 8 209 706</span>.
             </div>
             <div class="col-md-3">
-                <span class="colored">Get in Touch:</span> (only <span class="green">Whatsapp</span>) +44 (0) 756 8 209 706
+                <span class="colored">DISCLAIMER:</span> to get image removal use previous contact indications.
             </div>
             <div class="col-md-3">
-                <span class="colored">Disclaimer:</span> to get image removal use previous contact indications
+                <span class="colored">HOME:</span> Naples, Campania - ITALY.
             </div>
         </div>
-    </div>
 </footer>
 
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
